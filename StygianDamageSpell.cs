@@ -10,19 +10,19 @@ namespace MyFirstMod
         {
             new CardDataBuilder
             {
-                Cost = 1,
-                Rarity = CollectableRarity.Common,
+                Cost = 0,
+                Rarity = CollectableRarity.Uncommon,
                 CardType = CardType.Spell,
                 CardID = "Stygian_BitterCold",
                 Name = "Bitter Cold",
-                Description = "Deal <b>{[effect0.power]}</b> damage to the front enemy unit.",
+                Description = "Deal {[effect0.power]} damage to the front enemy unit.",
                 AssetPath = "bittercold.png",
                 ClanID = VanillaClanIDs.Stygian,
 
                 CardPoolIDs = new List<string> { VanillaCardPoolIDs.MegaPool },
 
                 TargetsRoom = true,
-                Targetless = false,
+                Targetless = true,
                 EffectBuilders = new List<CardEffectDataBuilder>
                 {
                     new CardEffectDataBuilder
